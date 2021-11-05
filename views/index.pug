@@ -1,0 +1,13 @@
+html 
+    include ./include/head.pug
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width", initial-scale=1.0)
+        link(href="/css.css" rel="stylesheet")
+    body 
+        h1  i am using pug to generate my html 
+        p trying out tailwind
+         - var internal_conflict = ["Mommy issues", "Daddy issues", "wants respect", "wants to be loved", "wants to clear their name", "wants to change the past", "wants approval", "wants to be treated like a human being by their society", "wants to be free", "wants to support/free their family", "wants to bring honor to their family"]
+        ul
+        each item in internal_conflict 
+             li #{item}
